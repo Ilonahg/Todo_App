@@ -1,74 +1,80 @@
-# 📝 Full-Stack Todo App
+📝 Full-Stack Todo App
 
-A full-stack Todo application with authentication, built using **React**, **Node.js**, **Express**, and **MongoDB**.
+A full-stack Todo application with authentication, built using React, Node.js, Express, and MongoDB.
 
-This project demonstrates a complete CRUD workflow, secure JWT-based authentication, and user-specific data access.
+This project demonstrates a complete CRUD workflow, JWT-based authentication, and user-specific data access.
 
----
+🚀 Features
 
-## 🚀 Features
+User login with JWT authentication
 
-- User registration & login
-- JWT authentication
-- Create, read, update, delete todos
-- Mark todos as completed
-- Edit todo title (double click)
-- Todos are private (per user)
-- Persistent storage with MongoDB
-- Clean and responsive UI
+Protected API routes
 
----
+Create, read, update, delete todos
 
-## 🛠 Tech Stack
+Mark todos as completed
 
-### Frontend
-- React (Vite)
-- Fetch API
-- CSS
+Todos are private (per user)
 
-### Backend
-- Node.js
-- Express
-- MongoDB + Mongoose
-- JWT
-- bcryptjs
+Persistent storage with MongoDB
 
----
+Clean and responsive UI
 
-## 📂 Project Structure
+⚠️ For demo purposes, authentication is limited to a predefined user.
 
-```text
-frontend/
-  ├─ src/
-  │  ├─ App.jsx
-  │  ├─ index.css
-  │  └─ main.jsx
-  └─ index.html
+🛠 Tech Stack
+Frontend
 
-backend/
-  ├─ models/
-  │  ├─ User.js
-  │  └─ Todo.js
-  ├─ middleware/
-  │  └─ auth.js
-  ├─ index.js
-  └─ .env
+React (Vite)
+
+Fetch API
+
+CSS
+
+Backend
+
+Node.js
+
+Express
+
+MongoDB + Mongoose
+
+JWT
+
+bcryptjs
+
+📂 Project Structure
+Frontend
+src/
+ ├─ App.jsx
+ ├─ api.js
+ ├─ index.css
+ └─ main.jsx
+
+Backend
+models/
+ ├─ User.js
+ └─ Todo.js
+middleware/
+ └─ auth.js
+index.js
+.env
+
 🔐 Authentication Flow
 
-User registers with email & password
+User logs in with email & password
 
-Password is hashed using bcrypt
+Password is verified using bcrypt
 
 JWT token is issued on login
 
 Token is stored in localStorage
 
-Protected routes require Authorization: Bearer <token>
+Protected routes require
+Authorization: Bearer <token>
 
 📡 API Endpoints
 Auth
-
-POST /register
 
 POST /login
 
@@ -91,12 +97,28 @@ Backend .env file:
 MONGO_URL=your_mongodb_atlas_url
 JWT_SECRET=your_secret_key
 
-▶️ Run Locally
-Backend
+🌍 Live Demo
+
+- **Frontend (Vercel):**  
+  https://todo-frontend-5mgukftvb-ilonahgs-projects.vercel.app/
+
+- **Backend API (Render):**  
+  https://todo-app-kcy6.onrender.com/
+  
+## 🔐 Demo Credentials  
+Use the following credentials to test the app:
+- Email: **test@test.com**
+- Password: **123456**
+
+## ▶️ Run Locally
+
+### Backend
+
 npm install
 node index.js
 
-Frontend
+### Frontend
+
 npm install
 npm run dev
 
@@ -112,7 +134,7 @@ Frontend: Vercel
 
 Full-stack development skills
 
-Secure authentication
+Secure authentication with JWT
 
 REST API design
 
@@ -124,8 +146,5 @@ Clean and maintainable code
 
 👤 Author
 
-Built by Ilona Hohilchyn
+Ilona Hohilchyn
 Junior Full-Stack Developer
-
-
- 
